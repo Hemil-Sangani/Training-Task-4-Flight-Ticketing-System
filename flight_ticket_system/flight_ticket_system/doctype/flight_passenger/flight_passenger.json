@@ -8,7 +8,8 @@
  "field_order": [
   "first_name",
   "last_name",
-  "date_of_birth"
+  "date_of_birth",
+  "full_name"
  ],
  "fields": [
   {
@@ -29,6 +30,12 @@
    "in_list_view": 1,
    "label": "Date Of Birth",
    "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -38,7 +45,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2025-03-04 16:35:35.935754",
+ "modified": "2025-03-05 10:25:09.564391",
  "modified_by": "Administrator",
  "module": "Flight Ticket System",
  "name": "Flight Passenger",
@@ -62,5 +69,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "first_name"
+ "title_field": "full_name"
 }
