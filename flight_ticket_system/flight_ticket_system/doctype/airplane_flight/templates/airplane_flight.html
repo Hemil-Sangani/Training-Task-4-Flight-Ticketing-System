@@ -1,0 +1,27 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h2>{{ title }}</h2>
+<div class="card border-0" style="width: 18rem;">
+    <div class="card-body">
+      <h3 class="card-title mt-0">Flight Details</h3>
+      <ul>
+        <li>
+            Airline:{{airplane}}
+        </li>
+        <li>
+            {{ doc.source_airport_code }} -> {{ doc.destination_airport_code }}
+        </li>
+        <li>
+            {{ doc.date_of_departure }} | {{ doc.time_of_departure }}
+        </li>
+        <li>
+            Duration:{{duration}}
+        </li>
+      </ul>
+      <button type="button" style="background-color: rgb(50,45,255) !important;" class="btn btn-primary">Book Flight</button>
+    </div>
+  </div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

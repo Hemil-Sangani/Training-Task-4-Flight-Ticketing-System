@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "format:{airplane}-{MM}-{YYYY}-{#####}",
  "creation": "2025-03-05 11:13:13.093918",
@@ -8,6 +9,8 @@
  "field_order": [
   "airplane",
   "status",
+  "route",
+  "is_available",
   "airport_details_section",
   "source_airport",
   "source_airport_code",
@@ -110,12 +113,25 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_available",
+   "fieldtype": "Check",
+   "label": "is Available"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_available",
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-05 12:04:03.788133",
+ "modified": "2025-03-06 19:25:33.129177",
  "modified_by": "Administrator",
  "module": "Flight Ticket System",
  "name": "Airplane Flight",
@@ -136,6 +152,7 @@
    "write": 1
   }
  ],
+ "route": "flights",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [

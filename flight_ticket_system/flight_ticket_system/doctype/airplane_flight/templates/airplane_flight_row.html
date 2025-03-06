@@ -1,0 +1,8 @@
+<div class="card m-2 p-3 border border-secondary shadow-sm">
+	<div style="font-weight: 500;">{{ doc.title or doc.name }}</div>
+	<div>{{ doc.source_airport_code }} -> {{ doc.destination_airport_code }}</div>
+	<div>{{ doc.date_of_departure }} | {{ doc.time_of_departure }} | {{ doc.duration }}</div>
+	<div class="mt-2">
+		<a style="color:rgb(50,45,255) !important;" href="{{ doc.route }}">View Flight</a>
+	</div>
+</div>

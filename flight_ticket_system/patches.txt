@@ -4,3 +4,4 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+flight_ticket_system.patches.v15_0.populate_seats #1202
