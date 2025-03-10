@@ -8,7 +8,8 @@
  "field_order": [
   "founding_year",
   "customer_care_number",
-  "headquarters"
+  "headquarters",
+  "website"
  ],
  "fields": [
   {
@@ -30,6 +31,12 @@
    "in_list_view": 1,
    "label": "Headquarters",
    "reqd": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -39,7 +46,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2025-03-04 16:33:02.192240",
+ "modified": "2025-03-10 10:31:00.874404",
  "modified_by": "Administrator",
  "module": "Flight Ticket System",
  "name": "Airline",

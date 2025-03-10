@@ -9,6 +9,12 @@ class AirplaneTicket(Document):
 	def before_insert(self):
 		alphabet = ['A','B','C','D','E']
 		self.seat = f"{random.randint(1,100)}{random.choice(alphabet)}"
+		airplane_flight = frappe.get_doc('Airplane Flight',self.flight)
+		ticket_count = frappe.db.count('Airplane Ticket',{'flight':self.flight})
+		airplane = frappe.get_doc('Airplane',airplane_flight.airplane)
+		if ticket_count+1>airplane.capacity:
+			frappe.throw("Flight is Full")
+		
 
 	def validate(self):
 		add_on_type = []
