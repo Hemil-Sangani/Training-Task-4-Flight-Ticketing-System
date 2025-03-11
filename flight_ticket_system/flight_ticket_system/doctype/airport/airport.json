@@ -8,7 +8,10 @@
  "field_order": [
   "code",
   "city",
-  "country"
+  "country",
+  "total_shops",
+  "available_shops",
+  "lease_shops"
  ],
  "fields": [
   {
@@ -31,11 +34,36 @@
    "in_list_view": 1,
    "label": "Country",
    "reqd": 1
+  },
+  {
+   "fieldname": "total_shops",
+   "fieldtype": "Int",
+   "label": "Total Shops",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_shops",
+   "fieldtype": "Int",
+   "label": "Available Shops",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "lease_shops",
+   "fieldtype": "Int",
+   "label": "Lease Shops",
+   "non_negative": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-03-04 12:11:39.161669",
+ "links": [
+  {
+   "link_doctype": "Shop",
+   "link_fieldname": "airport"
+  }
+ ],
+ "modified": "2025-03-11 13:19:40.589290",
  "modified_by": "Administrator",
  "module": "Flight Ticket System",
  "name": "Airport",

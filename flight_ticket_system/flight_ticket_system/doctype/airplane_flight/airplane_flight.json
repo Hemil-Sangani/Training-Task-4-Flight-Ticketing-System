@@ -20,6 +20,7 @@
   "departure_details_section",
   "date_of_departure",
   "duration",
+  "gate_number",
   "column_break_ikyw",
   "time_of_departure",
   "amended_from"
@@ -124,14 +125,25 @@
    "fieldname": "is_available",
    "fieldtype": "Check",
    "label": "is Available"
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Int",
+   "label": "Gate Number",
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_available",
  "is_submittable": 1,
- "links": [],
- "modified": "2025-03-06 19:25:33.129177",
+ "links": [
+  {
+   "link_doctype": "Crew Member",
+   "link_fieldname": "flight"
+  }
+ ],
+ "modified": "2025-03-11 17:47:44.372655",
  "modified_by": "Administrator",
  "module": "Flight Ticket System",
  "name": "Airplane Flight",

@@ -4,6 +4,11 @@ app_publisher = "Hemil"
 app_description = "Use To Manage Flight Ticket"
 app_email = "hemil@sanskartechnolab.com"
 app_license = "mit"
+scheduler_events = {
+    "monthly": [
+        "flight_ticket_system.airport_shop_management.rent_reminder.send_rent_reminder"
+    ],
+}
 
 # Apps
 # ------------------

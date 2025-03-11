@@ -22,6 +22,7 @@
   "departure_time",
   "column_break_qlmo",
   "duration_of_flight",
+  "gate_number",
   "section_break_kbkw",
   "flight_price",
   "total_amount"
@@ -149,12 +150,19 @@
    "fieldtype": "Data",
    "label": "Seat",
    "read_only": 1
+  },
+  {
+   "fetch_from": "flight.gate_number",
+   "fieldname": "gate_number",
+   "fieldtype": "Int",
+   "label": "Gate Number",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-05 11:43:52.499267",
+ "modified": "2025-03-11 17:59:01.083101",
  "modified_by": "Administrator",
  "module": "Flight Ticket System",
  "name": "Airplane Ticket",
