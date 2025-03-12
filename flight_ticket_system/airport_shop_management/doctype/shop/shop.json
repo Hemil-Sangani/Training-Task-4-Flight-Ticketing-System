@@ -13,7 +13,8 @@
   "area_of_shop",
   "rent_amount",
   "airport",
-  "status"
+  "status",
+  "shop_type"
  ],
  "fields": [
   {
@@ -66,11 +67,17 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Available\nOccupied"
+  },
+  {
+   "fieldname": "shop_type",
+   "fieldtype": "Link",
+   "label": "Shop Type",
+   "options": "Shop Type"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-11 18:46:36.477626",
+ "modified": "2025-03-12 14:15:58.197501",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Shop",

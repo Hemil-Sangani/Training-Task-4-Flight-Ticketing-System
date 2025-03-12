@@ -1,0 +1,19 @@
+{% extends "templates/web.html" %}
+{%- block head_include %}
+<link rel="stylesheet" href="/assets/flight_ticket_system/css/custom.css">
+{% endblock -%}
+{% block page_content %}
+<h2>Shop Listings</h2>
+<table class="table">
+    <tr>
+        <th>Shop Name</th>
+        <th>Status</th>
+    </tr>
+    {% for shop in shops %}
+    <tr>
+        <td><a href="/shop_detail?shop_id={{shop.name}}">{{ shop.name }}</a></td>
+        <td>{{ shop.status }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

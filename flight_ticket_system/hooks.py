@@ -6,9 +6,15 @@ app_email = "hemil@sanskartechnolab.com"
 app_license = "mit"
 scheduler_events = {
     "monthly": [
-        "flight_ticket_system.airport_shop_management.rent_reminder.send_rent_reminder"
+        "flight_ticket_system.airport_shop_management.rent_payment_schedule.generate_rent_payment_schedule"
     ],
 }
+fixtures = [
+    {
+        "dt": "Shop Type",
+        "filters": [["name", "in", ["Stall", "Walk-through", "Normal"]]]
+    }
+]
 
 # Apps
 # ------------------

@@ -1,0 +1,16 @@
+{% extends "templates/web.html" %}
+{%- block head_include %}
+<link rel="stylesheet" href="/assets/flight_ticket_system/css/custom.css">
+{% endblock -%}
+{% block page_content %}
+<h2>{{shop.name}} Shop Details</h2>
+<ol style="list-style: none;">
+    <li>Shop Number - {{shop.shop_number}}</li>
+    <li>Shop Rent - {{shop.rent_amount}}</li>
+    <li>Shop Airport Name - {{shop.airport}}</li>
+    <li>Shop is Available - {% if shop.status=='Available' %}Yes<br><a href="/shop-rental/new?shop_name={{ shop.name }}&shop_number={{ shop.shop_number }}&airport={{ shop.airport }}" class="button">
+        Request Rental
+    </a>
+    {% else %}No{%endif%}</li>
+</ol>
+{% endblock %}
