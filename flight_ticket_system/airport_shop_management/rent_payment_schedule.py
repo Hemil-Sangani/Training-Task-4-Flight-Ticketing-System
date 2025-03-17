@@ -23,7 +23,9 @@ def generate_rent_payment_schedule():
                 })
                 rent_payment.insert(ignore_permissions=True)
         frappe.db.commit()
-        send_rent_reminder(contracts)
+        rent_reminder = frappe.get_single("Airport Shop Settings")
+        if rent_reminder.rent_reminder == "Enable":
+            send_rent_reminder(contracts)
 
 def send_rent_reminder(contracts):
     tenant_contracts = dict()

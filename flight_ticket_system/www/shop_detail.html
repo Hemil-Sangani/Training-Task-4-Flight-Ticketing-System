@@ -8,7 +8,7 @@
     <li>Shop Number - {{shop.shop_number}}</li>
     <li>Shop Rent - {{shop.rent_amount}}</li>
     <li>Shop Airport Name - {{shop.airport}}</li>
-    <li>Shop is Available - {% if shop.status=='Available' %}Yes<br><a href="/shop-rental/new?shop_name={{ shop.name }}&shop_number={{ shop.shop_number }}&airport={{ shop.airport }}" class="button">
+    <li>Shop is Available - {% if shop.status=='Available' %}Yes<br><a href="/shop-rental/new?shop={{shop.name}}" class="button">
         Request Rental
     </a>
     {% else %}No{%endif%}</li>

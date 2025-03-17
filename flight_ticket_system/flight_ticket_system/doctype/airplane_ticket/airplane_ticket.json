@@ -48,7 +48,8 @@
    "in_list_view": 1,
    "label": "Passenger",
    "options": "Flight Passenger",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "flight.source_airport_code",
@@ -162,7 +163,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-11 17:59:01.083101",
+ "modified": "2025-03-13 16:45:21.807405",
  "modified_by": "Administrator",
  "module": "Flight Ticket System",
  "name": "Airplane Ticket",
